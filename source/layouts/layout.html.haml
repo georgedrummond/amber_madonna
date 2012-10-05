@@ -2,9 +2,8 @@
 %html
   %head
     %title The Search For The Amber Madonna
-    =stylesheet_link_tag 'http://twitter.github.com/bootstrap/assets/css/bootstrap.css'
     =stylesheet_link_tag 'all'
-    =javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'
+    =javascript_include_tag 'all'
     =partial 'js'
 
   %body
@@ -35,10 +34,4 @@
             .social <div class="fb-like" data-href="http://ambermadonna.com" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false"></div>
      
     .container
-      =yield
-    :javascript
-      setTimeout(function(){
-        $(function(){
-          $('#top_banner').slideDown();
-        })
-      }, 1500)
+      =yield      
